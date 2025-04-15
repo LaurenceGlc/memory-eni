@@ -1,0 +1,65 @@
+
+* {
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+  background-color: linear-gradient(to bottom right, rgb(104, 195, 152), rgb(69, 79, 215));
+  border-top-left-radius: 60;
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+h1 {
+  font: size 15px;
+}
+
+
+
+h2{
+  font-size: small;
+
+}
+
+nav{
+    border:1px solid #121111;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+nav li{
+    display:inline;
+}
+nav a{
+    display:inline-block;
+    padding:10px;
+}
+
+ul li a {  
+ width:100px;
+ background: black;
+ color:#DCDCDC;
+ text-decoration:none;
+ text-align:center;
+ }
+ul li a:hover {
+background: radial-gradient(#dcdcdc, #3c3838);
+ color:white;
+ }  
+
+
+#jeu {
+    color: #f2e6e6;
+    text-align: left;
+    font-weight: 30;
+    font-size: 15px;
+  }
+
+
+
