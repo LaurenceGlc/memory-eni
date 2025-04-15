@@ -1,65 +1,165 @@
-
-* {
-  font-family:Verdana, Geneva, Tahoma, sans-serif ;
-  background-color: linear-gradient(to bottom right, rgb(104, 195, 152), rgb(69, 79, 215));
-  border-top-left-radius: 60;
+body {
+  background-image: linear-gradient(90deg, rgb(170, 236, 157), rgb(94, 94, 192));
+  
+  margin: 40px;
+  font-family: Arial, sans-serif;
 }
 
-
-header{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
+nav li {
+  display: inline;
+  list-style: none;
+  cursor: pointer;
 }
 
+nav {
+  width: 30%;
+  margin-bottom: 30px; 
+}
+
+nav a {
+  display: inline-block;
+  margin: 5px;
+}
 
 h1 {
-  font: size 15px;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+  font-size: 40px;
+  color: white;
+}
+
+h4 {
+  text-align: left;
+  font-weight: 200;
+  color: white;
 }
 
 
-
-h2{
-  font-size: small;
-
+ul.menu {
+  list-style-type: style square;
+  padding: 3%;
+  margin: 5px;
+  background-color: rgb(33, 31, 31);
+  color: white;
+  border: solid 1px;
+  border-color: white;
 }
 
-nav{
-    border:1px solid #121111;
-    border-width:1px 0;
-    list-style:none;
-    margin:0;
-    padding:0;
-    text-align:center;
-}
-nav li{
-    display:inline;
-}
-nav a{
-    display:inline-block;
-    padding:10px;
+.menu li a {
+  display: inline-block;
+  padding: 3px;
+  text-decoration: none;
+  color: white;
 }
 
-ul li a {  
- width:100px;
- background: black;
- color:#DCDCDC;
- text-decoration:none;
- text-align:center;
- }
-ul li a:hover {
-background: radial-gradient(#dcdcdc, #3c3838);
- color:white;
- }  
+.menu li a:hover {
+  background-color: rgb(82, 79, 79);
+}
 
+main {
+  background-color:rgb(33, 31, 31);
+  color: white; 
+  width: 40%; 
+  padding: 20px; 
+  margin: 0 auto;
+  border-radius: 3%;
+  border: solid 1px;
+  border-color:  rgb(255, 255, 255);
+}
 
-#jeu {
-    color: #f2e6e6;
-    text-align: left;
-    font-weight: 30;
-    font-size: 15px;
+.bienvenueMessage {
+  font-size: 2ch;
+  text-align: left; 
+  margin-bottom: 20px; 
+}
+
+img {
+  width: 60%;
+  height: auto;
+  margin: 20px auto; 
+  display: block;
+}
+
+form {
+  background-color:none;
+  padding: 5px;px;
+  width:220px;
+  }
+
+  h2{
+    text-align: center;
+  }
+
+ fieldset {
+  padding:20px 20px 20px 20px;
+  margin-bottom:20px;
+  border: none;
+  font-size: 14px;
+  }
+
+.btnForm {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-around;
+  margin-top: 10px;
+  padding: 2%;
+
+  }
+
+#nom
+  {
+   background-color:rgb(33, 31, 31); ;
+    color: rgb(251, 250, 249);
+    width:auto;
+    font-size: 11px;
+    padding: 2px;
+    border-width: 1px;
+    border-top : none;
+    border-left : none;
+    border-right : none;
+  }
+
+  #email
+  {
+   background-color:rgb(33, 31, 31); ;
+    color: rgb(251, 250, 249);
+    width:auto;
+    font-size: 11px;
+    padding: 2px;
+    border-width: 1px;
+    border-top : none;
+    border-left : none;
+    border-right : none;
   }
 
 
+  #login  {
+   background-color:rgb(33, 31, 31); ;
+    color: rgb(251, 250, 249);
+    width:auto;
+    font-size: 11px;
+    padding: 2px;
+    border-width: 1px;
+    border-top : none;
+    border-left : none;
+    border-right : none;
+  }
 
+  .information{
+    padding-top: 3px;
+    font-size: 9px;
+    color: rgb(143, 131, 131);
+    width:500px;
+  }
+
+  #mdpVerif  {
+    background-color:rgb(33, 31, 31); ;
+     color: rgb(251, 250, 249);
+     width:200px;
+     font-size: 11px;
+     padding: 2px;
+     border-width: 1px;
+     border-top : none;
+     border-left : none;
+     border-right : none;
+   }

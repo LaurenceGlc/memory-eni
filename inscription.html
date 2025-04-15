@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscription</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>ENI - MEMORY - S'inscrire</h1>
+ 
+ <nav>
+        <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="inscription.html">S'inscrire</a></li>
+            <li><a href="connexion.html">Se connecter</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="jouer.html">Jouer</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Inscrivez-vous.</h2>
+        <section class="sectionForm">
+            <fieldset>
+                <form action="#" method="post">
+                    <div>
+                        <label for="nom">Nom d'utilisateur</label><br>
+                        <input type="text" name="nom" id="nom" placeholder="3 caractères minimum" required autofocus title="Renseigner votre nom" pattern="[a-zA-Z]+">
+                    </div><br>
+                    <div>
+                        <label for="email">Entrez votre email</label><br>
+                        <input type="text" name="email" id="email" placeholder="Votre e-mail"><br>
+                    </div><br>
+                    <div>
+                        <label for="login">Mot de passe</label><br>
+                        <input type="text" name="login" id="login" placeholder="Votre mot de passe" required title="Renseignez un login de minimum 3 caractères" pattern="[a-zA-Z0-9]{3,}">
+                    </div><br>
+                    <div>
+                        <label for="login">Confirmer votre mot de passe</label><br>
+                        <input type="password" name="mdpVerif" id="mdpVerif" placeholder="Confirmer le mot de passe" required title="Confirmez votre mot de passe" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                    </div>
+
+                    <div class="information">
+                        * Au moins un symbôle, un chiffre, ainsi que 6 caractères minimum
+                    </div>
+
+                </div>
+                    <div class="btnForm">
+                         <input type="submit" value="Creation du compte" class="btn">
+                         <input type="reset" value="Annuler" class="btn"> 
+
+                   
+
+                </form>
+            </fieldset>
+        </section>
+    </main>
+
+</body>
+</html>
