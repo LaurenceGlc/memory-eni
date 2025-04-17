@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>inscription</title>
     <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/126791e333.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
     <h1>ENI - MEMORY - S'inscrire</h1>
- 
  <nav>
         <ul class="menu">
             <li><a href="index.html">Accueil</a></li>
@@ -29,29 +29,42 @@
                     <div>
                         <label for="nom">Nom d'utilisateur</label><br>
                         <input type="text" name="nom" id="inputNom" placeholder="3 caractères minimum" required autofocus title="Renseigner votre nom" pattern="[a-zA-Z0-9]{3,}">
+                        <i class = "fas fa-check-circle"></i>
+                        <i class = "fas fa-exclamation"></i><br>
+                        <small>Erreur</small>
                     </div><br>
+
                     <div>
                         <label for="email">Entrez votre email</label><br>
-                        <input type="email" name="email" id="inputEmail" placeholder="Votre e-mail"><br>
+                        <input type="email" name="email" id="inputEmail" placeholder="Votre e-mail">
+                        <i class = "fas fa-check-circle"></i>
+                        <i class = "fas fa-exclamation"></i><br>
+                        <small>Erreur</small>
                     </div><br>
+
                     <div>
                         <label for="login">Mot de passe</label><br>
-                        <input type="email" name="login" id="inputLogin" placeholder="Votre mot de passe" required title="Renseignez un pseudo de minimum 3 caractères" pattern="[a-zA-Z0-9]{3,}">
+                        <input type="password" name="login" id="inputMdp" placeholder="Votre mot de passe" required title="Renseignez un pseudo de minimum 3 caractères" pattern="[a-zA-Z0-9]{3,}">
+                        <i class = "fas fa-check-circle"></i>
+                        <i class = "fas fa-exclamation"></i><br>
+                        <small>Erreur</small>
                     </div><br>
+
                     <div>
-                        <label for="login">Confirmer votre mot de passe</label><br>
+                        <label for="login2">Confirmer votre mot de passe</label><br>
                         <input type="password" name="mdpVerif" id="inputMdpVerif" placeholder="Confirmer le mot de passe" required title="Confirmez votre mot de passe" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+                        <i class = "fas fa-check-circle"></i>
+                        <i class = "fas fa-exclamation"></i><br>   
                     </div>
 
-                    <div class="information">
-                        * Au moins un symbôle, un chiffre, ainsi que 6 caractères minimum
+                    <div class="information"> Au moins un symbôle, un chiffre, ainsi que 6 caractères minimum
                     </div>
+                    <br><br>
 
-                </div>
-                    <div class="btnForm">
-                         <input type="submit" value="Creation du compte" class="btn">
-                         <input type="reset" value="Annuler" class="btn"> 
-
+                    <div class="button space">
+                    <button type="submit">Creation du compte</button>
+                    <button type="reset">Annuler</button>
+                    </div>
         
 
                 </form>

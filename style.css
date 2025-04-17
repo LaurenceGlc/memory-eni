@@ -1,6 +1,5 @@
 body {
   background-image: linear-gradient(90deg, rgb(170, 236, 157), rgb(94, 94, 192));
-  
   margin: 40px;
   font-family: Arial, Helvetica, sans-serif
 }
@@ -59,7 +58,7 @@ ul.menu {
 main {
   background-color:rgb(33, 31, 31);
   color: white; 
-  width: 40%; 
+  width: 30%; 
   padding: 20px; 
   margin: 0 auto;
   border-radius: 3%;
@@ -82,9 +81,10 @@ img {
 
 form {
   background-color:none;
-  padding: 5px;px;
-  width:220px;
+  padding: 5px;
+  width: 350px;
   }
+
 
   h2{
     text-align: center;
@@ -101,9 +101,9 @@ form {
   {
    background-color:rgb(33, 31, 31); ;
     color: rgb(251, 250, 249);
-    width:auto;
+    width:300px;
     font-size: 11px;
-    padding: 2px;
+    padding: 1px;
     border-width: 1px;
     border-top : none;
     border-left : none;
@@ -114,9 +114,9 @@ form {
   {
    background-color:rgb(33, 31, 31); ;
     color: rgb(251, 250, 249);
-    width:auto;
+    width:300px;
     font-size: 11px;
-    padding: 2px;
+    padding: 1px;
     border-width: 1px;
     border-top : none;
     border-left : none;
@@ -127,9 +127,9 @@ form {
   #inputLogin  {
    background-color:rgb(33, 31, 31); ;
     color: rgb(251, 250, 249);
-    width:auto;
+    width:300px;
     font-size: 11px;
-    padding: 2px;
+    padding: 1px;
     border-width: 1px;
     border-top : none;
     border-left : none;
@@ -138,7 +138,7 @@ form {
 
   .information{
     padding-top: 3px;
-    font-size: 9px;
+    font-size: 10px;
     color: rgb(143, 131, 131);
     width:500px;
   }
@@ -146,26 +146,47 @@ form {
   #inputMdpVerif  {
     background-color:rgb(33, 31, 31); ;
      color: rgb(251, 250, 249);
-     width:200px;
+     width: 300px;
      font-size: 11px;
-     padding: 2px;
+     padding: 1px;
      border-width: 1px;
      border-top : none;
      border-left : none;
      border-right : none;
    }
 
-   .btnForm {
-    display: flex;
-    color: blue;
-    align-items: center;
-    width: 100%;
   
-    }
+   button {
+    display: inline-block;
+    margin-left: 43px;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    color: #0d0c0c;
+    border-radius: 5px;
+    width: 130px;
+    height: 40px;
+    background-color: rgb(229, 229, 205);
+   }
 
+  .fas.fa-exclamation {
+      top:33 px;
+      color: red;
+      right: 10px;
+      visibility: hidden;
+  }
+      
+  .fas.fas.fa-check-circle {
+    color: green;
+    top: 33 px;
+    right: 10px;
+    visibility: hidden;
+} 
 
-   .error {
+  small {
+    font-size: 10px;
+    padding-top: 2px;
+    position: absolute;
     color: red;
-    font-size: 3em;
-    margin-top: 5px;
-}
+    visibility : hidden;
+  }
