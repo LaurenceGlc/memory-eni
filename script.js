@@ -1,41 +1,58 @@
+document.addEventListener('DOMContentLoaded', () => {
+  // Récupération des éléments du formulaire
+  let form = document.getElementById('myForm');
+  let recupInputName = document.getElementById('inputNom');
+  let recupEmail = document.getElementById('inputEmail');
+  let recupMdp = document.getElementById('inputMdp');
+  let recupMdpVerif = document.getElementById('inputMdpVerif');
 
-    //recup valeur saisie par le use 1)cibler le formulaire
-    let form = document.getElementById('myForm');
+  // Événements
+  form.addEventListener('input', () => {
+    form_verify();
+  });
 
-    //recup les valeurs saisies par le user
-    let recupInputName = document.getElementById('inputNom');
-    let recupEmail = document.getElementById('inputEmail');
-    let recupMdp = document.getElementById('inputMdp');
-    let recupMdpVerif = document.getElementById('inputMdpVerif');
+  // Fonction
+  function form_verify() {
+    let nameValue = recupInputName.value.trim();
+    let emailValue = recupEmail.value.trim();
+    let mdpValue = recupMdp.value.trim();
+    let mdpVerifValue = recupMdpVerif.value.trim();
+
+  // Vérification du champ Username
+    if (nameValue.length < 3) {
+      let message ="Username doit avoir au moins 3 caractères";
+      setError(recupInputName,message);
+    
+     } else {
+      setSuccess(recupInputName);
+      }}
+
   
-  // Evenements
-  form.addEventListener('input', e=>{
-  e.preventDefault();
-
-  form_verify();
-})
-
- // Fonctions
- function form_verify() {
-
-  // Obtenir toutes les valeurs des inputs
-  let nameValue = recupInputName.value.trim();
-  let emailValue = recupEmail.trim();
-  let mdpValue = recupMdp.value.trim();
-  let mdpVerifValue = recupMdpVerif.value.trim();
-  
-  // Username verif
-  if (userValue === "") {
-    let message ="Username ne peut pas être vide";
-    setError(recupInputName,message);
+  // Véification de l'email
+  if (!email_verify(emailValue)){
+    let message = "Email non valide";
+    setError(recupEmail,message);
 
   }else{
-      let letterNum = nameValue.length;
-      if (letterNum < 3) {
-          let message ="Le pseudo doit contenir au moins 3 caractères";
-      setError(recupInputName,message)
+    setSuccess(recupEmail);
+}})
 
-      } else {
-      setSuccess(recupInputName);
-      }
-  }}
+
+      function setError(elem,message) {
+      let formControl = elem.parentElement;
+      let small = formControl.querySelector('small');
+      // Ajout du message d'erreur
+      small.innerText = message
+      // Ajout de la classe error
+      formControl.className = "form-control error";
+  }
+  
+  function setSuccess(elem) {
+      let formControl = elem.parentElement;
+      formControl.className ='form-control success'
+  }
+
+
+  function email_verify(recupEmail) {
+    return "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$".test(recupEmail);
+  }

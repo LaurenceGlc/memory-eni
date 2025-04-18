@@ -28,7 +28,7 @@ h1 {
 }
 
 h4 {
-  text-align: left;
+  text-align: center;
   font-weight: 200;
   color: white;
 }
@@ -123,8 +123,19 @@ form {
     border-right : none;
   }
 
+  #inputMdp  {
+    background-color:rgb(33, 31, 31); ;
+     color: rgb(251, 250, 249);
+     width: 300px;
+     font-size: 11px;
+     padding: 1px;
+     border-width: 1px;
+     border-top : none;
+     border-left : none;
+     border-right : none;
+   }
 
-  #inputLogin  {
+  #inputMdpVerif {
    background-color:rgb(33, 31, 31); ;
     color: rgb(251, 250, 249);
     width:300px;
@@ -142,18 +153,6 @@ form {
     color: rgb(143, 131, 131);
     width:500px;
   }
-
-  #inputMdpVerif  {
-    background-color:rgb(33, 31, 31); ;
-     color: rgb(251, 250, 249);
-     width: 300px;
-     font-size: 11px;
-     padding: 1px;
-     border-width: 1px;
-     border-top : none;
-     border-left : none;
-     border-right : none;
-   }
 
   
    button {
@@ -174,6 +173,7 @@ form {
       color: red;
       right: 10px;
       visibility: hidden;
+    
   }
       
   .fas.fas.fa-check-circle {
@@ -187,6 +187,29 @@ form {
     font-size: 10px;
     padding-top: 2px;
     position: absolute;
-    color: red;
-    visibility : hidden;
+    color: rgb(249, 7, 7);
+    
   }
+
+
+.form-control.success input{
+    border-color: var(--color-success);
+}
+.form-control.error input{
+    border-color: var(--color-error);
+}
+.form-control.success i.fa-check-circle{
+    color: green;
+    top: 33 px;
+    right: 10px;
+    color: var(--color-success);
+    visibility: visible;
+}
+.form-control.error i.fa-exclamation{
+    color: var(--color-error);
+    visibility: visible;
+}
+.form-control.error small{
+    color: var(--color-error);
+    visibility: visible;
+}
